@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <div id="navbar"></div>
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1>Welcome to My Website</h1>
+        <p>This is the main content of the Home page.</p>
+        <div class="container">
+            <h1>Creative Writing Prompt Generator</h1>
+        
+            <select id="genre" onchange="setSelectedGenre()">
+                <option value="adventure">Adventure</option>
+                <option value="romance">Romance</option>
+                <option value="horror">Horror</option>
+                <option value="mystery">Mystery</option>
+                <option value="science-fiction">Science Fiction</option>
+                <option value="fantasy">Fantasy</option>
+            </select>
+            
+            <button class="btn1" onclick="generatePrompt()">Generate Prompt</button>
+        
+            <div id="prompt"></div>
+        
+            <button class="btn" onclick="saveFavorite()">Save Favorite Prompt</button>
+        
+            <h2>Writing Timer</h2>
+            <div id="timer">Time Left: 00:00</div>
+            <button class="btn" onclick="startTimer()">Start Timer (5 minutes)</button>
+        
+            <div class="saved-prompts">
+                <h3>Your Saved Prompts</h3>
+                <ul id="favorites-list"></ul>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

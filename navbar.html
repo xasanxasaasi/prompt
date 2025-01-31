@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Add basic dropdown styling */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            color: white;
+            z-index: 1;
+        }
+        .dropdown-content ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .dropdown-content li {
+            padding: 12px 16px;
+            text-align: left;
+        }
+        .dropdown-content li a {
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="img/yuuu-01.png" alt="logo">
+        <ul>
+            <li><a href="index.html">Assignment</a></li>
+            <li class="dropdown">
+                <a href="index.html">Chapters</a>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="chapters.html?chapter=chapter1">Chapter 1</a></li>
+                        <li><a href="chapters.html?chapter=chapter2">Chapter 2</a></li>
+                        <li><a href="chapters.html?chapter=chapter3">Chapter 3</a></li>
+                        <li><a href="chapters.html?chapter=chapter4">Chapter 4</a></li>
+                        <li><a href="chapters.html?chapter=chapter5">Chapter 5</a></li>
+                        <li><a href="chapters.html?chapter=chapter6">Chapter 6</a></li>
+                        <li><a href="chapters.html?chapter=chapter7">Chapter 7</a></li>
+                        <li><a href="chapters.html?chapter=chapter8">Chapter 8</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="about.html">About Me</a></li>
+        </ul>
+    </nav>
+    <script src="js/script.js"></script>
+</body>
+</html>

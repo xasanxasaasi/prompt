@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Chapter Examples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .chapter {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: none; /* Hide chapters by default */
+        }
+        .chapter.active {
+            display: block; /* Show the selected chapter */
+        }
+        button {
+            margin: 10px 0;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        input {
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+            max-width: 300px;
+        }
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+            background-color: #f9f9f9;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: none; /* Hide result divs initially */
+        }
+        .card h3 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Chapter Examples</h1>
+    <div id="chapter1" class="chapter">
+        <h2>Chapter 1: alert</h2>
+        <button onclick="example1()">Example 1: alert</button>
+    </div>
+
+    <!-- Chapter 2: Values, Types, Variables, and Operators -->
+    <div id="chapter2" class="chapter">
+        <h2>Chapter 2: Values, Types, Variables, and Operators</h2>
+        <div class="chapter-content">
+            <button onclick="example2()">Example 1: String Length</button>
+            <button onclick="example3()">Example 2: Arithmetic Operations</button>
+            <button onclick="example4()">Example 3: Comparison Operators</button>
+            <div id="example2-result" class="card"></div>
+            <div id="example3-result" class="card"></div>
+            <div id="example4-result" class="card"></div>
+        </div>
+    </div>
+
+    <!-- Chapter 3: Control Structures -->
+    <div id="chapter3" class="chapter">
+        <h2>Chapter 3: Control Structures</h2>
+        <div class="chapter-content">
+            <button onclick="example5()">Example 1: If-Else Statement</button>
+            <button onclick="example6()">Example 2: Switch Statement</button>
+            <button onclick="example7()">Example 3: For Loop</button>
+            <div id="example5-result" class="card"></div>
+            <div id="example6-result" class="card"></div>
+            <div id="example7-result" class="card"></div>
+        </div>
+    </div>
+
+    <!-- Chapter 4: Functions -->
+    <div id="chapter4" class="chapter">
+        <h2>Chapter 4: Functions</h2>
+        <div class="chapter-content">
+            <button onclick="example8()">Example 1: Function Declaration</button>
+            <button onclick="example9()">Example 2: Arrow Function</button>
+            <button onclick="example10()">Example 3: Callback Function</button>
+            <div id="example8-result" class="card"></div>
+            <div id="example9-result" class="card"></div>
+            <div id="example10-result" class="card"></div>
+        </div>
+    </div>
+
+    <!-- Chapter 5: Arrays and Objects -->
+    <div id="chapter5" class="chapter">
+        <h2>Chapter 5: Arrays and Objects</h2>
+        <div class="chapter-content">
+            <button onclick="example11()">Example 1: Array Manipulation</button>
+            <button onclick="example12()">Example 2: Object Properties</button>
+            <button onclick="example13()">Example 3: JSON Parsing</button>
+            <div id="example11-result" class="card"></div>
+            <div id="example12-result" class="card"></div>
+            <div id="example13-result" class="card"></div>
+        </div>
+    </div>
+
+    <!-- Chapter 6: DOM Manipulation -->
+    <div id="chapter6" class="chapter">
+        <h2>Chapter 6: DOM Manipulation</h2>
+        <div class="chapter-content">
+            <button onclick="example14()">Example 1: Create Element</button>
+            <button onclick="example15()">Example 2: Modify Element</button>
+            
+            <div id="example14-result" class="card"></div>
+            <div id="example15-result" class="card"></div>
+            
+        </div>
+    </div>
+
+    <div id="chapter7" class="chapter">
+        <h2>Chapter 7: JavaScript Events</h2>
+        <div class="chapter-content">
+            <!-- Existing Examples -->
+            <button onclick="example16()">Example 1: Click Event</button>
+            <button onclick="example17()">Example 2: Hover Event</button>
+            <button onclick="example18()">Example 3: Double Click Event</button>
+            <button onclick="example19()">Example 4: Key Press Event</button>
+            <button onclick="example20()">Example 5: Form Submit Event</button>
+            <button onclick="example21()">Example 6: Event Delegation</button>
+            <button onclick="example22()">Example 7: Custom Event</button>
+    
+            <!-- Result Divs -->
+            <div id="example16-result" class="card"></div>
+            <div id="example17-result" class="card"></div>
+            <div id="example18-result" class="card"></div>
+            <div id="example19-result" class="card"></div>
+            <div id="example20-result" class="card"></div>
+            <div id="example21-result" class="card"></div>
+            <div id="example22-result" class="card"></div>
+        </div>
+    </div>
+
+
+    <div id="chapter8" class="chapter">
+        <h2>Chapter 8: Bootstrap Page</h2>
+        <div class="chapter-content">
+            <a href="boostrap.html"><button onclick="example23()">Example 8: Bootstrap Page</button></a>
+            
+        </div>
+    </div>
+    
+    <!-- Include scripts.js -->
+    <script src="js/script.js"></script>
+
+    
+</body>
+</html>
